@@ -40,7 +40,5 @@ public class PersonaController {
 	@PostMapping("/save")
 	public ResponseEntity<Persona> savePersona(@RequestBody Persona persona){
 		return ResponseEntity.ok(personaService.savePersona(persona));
-	}
-	
-	
+	}	
 }
