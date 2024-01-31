@@ -8,8 +8,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.NoArgsConstructor;
 
 @Entity
+@NoArgsConstructor
 @Table( name = "tb_persona")
 public class Persona {
 
@@ -23,6 +25,8 @@ public class Persona {
 	@Column
 	private String paterno;
 
+	public Persona() {}
+	
 	public Long getIdPersona() {
 		return idPersona;
 	}
